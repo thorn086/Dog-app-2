@@ -14,7 +14,6 @@ Body{
 header{
     width:100%;
     padding: 10px;
-    background: ;
     border-bottom: solid 3px black;
     background-image: linear-gradient(to left, rgb(133, 170, 250), rgb(14, 137, 252))
 }
