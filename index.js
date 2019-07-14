@@ -5,6 +5,7 @@ function submitForm() {
     $('form').submit(event => {
         event.preventDefault();
         userInput();
+        resetForm();
     });
 }
 
@@ -15,7 +16,11 @@ function userInput() {
         .then(dogImageJson => console.log(dogImageJson));
 }
 
+function resetForm(){
+    $('form').trigger('reset');
+}
 
+userInput();
 $(function () {
     console.log('app loaded, ready for submition');
     submitForm();
