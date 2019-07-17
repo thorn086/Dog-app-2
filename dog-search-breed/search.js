@@ -24,7 +24,7 @@ function displayImages(dogImageJson){
 
 function error(dogImageJson){
     $('.results-img').empty();
-    return `${dogImageJson.message}`
+    $('.results-img').append(`<div>${dogImageJson.message}</div>`);
 }
 
 function loadImages(breed) {
